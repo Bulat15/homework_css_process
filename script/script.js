@@ -29,10 +29,10 @@ function render(list) {
 		close.innerText = 'Х';
 
 		card.addEventListener('dblclick', () => {
-			if (p.innerText === wordElement.word.value) {
+			if (p.innerText === elem.word) {
 				p.innerText = elem.translation;
 			} else {
-				p.innerText = wordElement.word.value;
+				p.innerText = elem.word;
 			}
 		});
 
